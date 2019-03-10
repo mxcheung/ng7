@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { StudentModule } from './student/student.module';
+import { ChartModule } from 'angular-highcharts';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +22,7 @@ import { DashboardpanelComponent } from './shared/components/dashboardpanel/dash
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ChartModule,
     StudentModule
   ],
   providers: [],
