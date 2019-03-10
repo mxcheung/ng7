@@ -1,14 +1,21 @@
 <div class="container-fluid">
   <h1> Main Dashboard </h1>
   <div class="row">
-    <app-dashboardpanel>
-
+    <app-dashboardpanel
+      class="col-lg-4 col-md-12"
+      [paneltype]="'bignumber'"
+      [bignumber]="'456,984'"
+      [title]="'Amount of trades'"
+      [description]="'Total amount of trades last month.'">
     </app-dashboardpanel>
 
+    <app-dashboardpanel
+    class="col-lg-4 col-md-12"
+    [paneltype]="'bignumber'"
+    [bignumber]="'944,231'"
+    [title]="'Net Liq'"
+    [description]="'New Net Liquidity Value.'">
+    </app-dashboardpanel>
     
-    <app-dashboardpanel>
-
-    </app-dashboardpanel>
-
   </div>
 </div>
