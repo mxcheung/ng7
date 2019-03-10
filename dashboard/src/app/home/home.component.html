@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h1> Main Dashboard </h1>
+  <h1> Main Dashboard Summary </h1>
   <div class="row">
     <app-dashboardpanel
       class="col-lg-4 col-md-12"
@@ -12,10 +12,36 @@
     <app-dashboardpanel
     class="col-lg-4 col-md-12"
     [paneltype]="'bignumber'"
+    [bignumber]="'49,231'"
+    [title]="'Clearing Fee Value'"
+    [description]="'Total Clearing Fee Value of last month.'">
+    </app-dashboardpanel>
+
+    <app-dashboardpanel
+    class="col-lg-4 col-md-12"
+    [paneltype]="'bignumber'"
     [bignumber]="'944,231'"
     [title]="'Net Liq'"
     [description]="'New Net Liquidity Value.'">
     </app-dashboardpanel>
-    
+
+    <app-dashboardpanel
+    class="col-lg-6 col-md-12"
+    [paneltype]="'chart'"
+    [bignumber]="''"
+    [chartcontent]="chart1"
+    [title]="'Trade Volume'"
+    [description]="'Amount of Trades over time.'">
+    </app-dashboardpanel>
+
+    <app-dashboardpanel
+    class="col-lg-6 col-md-12"
+    [paneltype]="'chart'"
+    [bignumber]="''"
+    [chartcontent]="chart2"
+    [title]="'Region Distribution'"
+    [description]="'The amount of trades per region.'">
+    </app-dashboardpanel>
+
   </div>
 </div>

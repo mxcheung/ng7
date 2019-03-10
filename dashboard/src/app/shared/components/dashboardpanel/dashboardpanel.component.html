@@ -1,10 +1,10 @@
 <div class="panelstyle">
   <div class="panelcontent">
     <h1 *ngIf="paneltype === 'bignumber'" class="bignumber"> {{ bignumber }}</h1>
-    <div *ngIf="paneltype === 'chart'" [chart]="chartcontent"></div>
+    <div *ngIf="paneltype === 'chart'" [chart]="chartcontent"> {{chartcontent}}</div>
   </div>
   <div class="paneltitle">
-    <h2> {{ title }} test title</h2>
+    <h2> {{ title }} </h2>
   </div>
   <div class="panelsubtitle">
     <h4> {{ description }}</h4>
